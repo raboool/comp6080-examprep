@@ -13,8 +13,15 @@ function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // fixed = position: fixed
+  // bg-#eeeeee = background colour of #eeeeee
+  // h-[80px] = height of 80px
+  // w-full = width that spans viewport
+  // flex = makes it so items appear in the line
+  // items-center = centers the text to the middle of the navbar
+  // justify-between = makes it so theres an equal distance between each part  
   return (
-    <header className="fixed top-0 left-0 w-full h-20 bg-[#eeeeee] flex items-center justify-between px-4 z-50">
+    <header className="fixed w-full h-[80px] bg-[#eeeeee] flex items-center justify-between">
     {/* Logo */}
     <img
         src={logo}
