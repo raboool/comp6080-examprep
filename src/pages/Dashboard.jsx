@@ -13,6 +13,9 @@ function Dashboard() {
     localStorage.setItem('gamesWon', initialScore.toString());
   };
 
+  // flex flex-col items-center justify-center h-screen
+  // all these things make it so text appears in the centre of the page
+
   return (
     <main className="flex flex-col items-center justify-center h-screen">
       <p className="text-[2em] text-red-600 mb-4">
