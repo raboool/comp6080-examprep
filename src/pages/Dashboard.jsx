@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
 function Dashboard() {
-  const [gamesWon, setGamesWon] = useState(0);
+  const [gamesWon, setGamesWon] = useState(() => {
+    const saved = localStorage.getItem('gamesWon');
+    return saved ? parseInt(saved, 10) : 0;
+  });
 
   // Handle reset button
   const handleReset = async () => {

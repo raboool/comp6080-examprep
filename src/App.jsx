@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Dashboard from './pages/Dashboard';
+import Blanko from './pages/Blanko';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -17,6 +18,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/blanko" element={<Blanko />} />
           </Routes>
           <Footer />
         </div>
