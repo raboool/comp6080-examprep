@@ -13,11 +13,13 @@ import Footer from "./components/Footer";
 function App() {
   return (
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-        <Footer />
+        <div className="m-0">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
   );
 }

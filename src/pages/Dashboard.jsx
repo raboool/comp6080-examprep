@@ -1,12 +1,30 @@
+import { useState } from 'react';
+
 function Dashboard() {
+  const [gamesWon, setGamesWon] = useState(0);
+
+  // Handle reset button
+  const handleReset = async () => {
+    const initialScore = 0;
+    setGamesWon(initialScore);
+    localStorage.setItem('gamesWon', initialScore.toString());
+  };
+
   return (
-      <main className="pt-20 pb-[50px] min-h-screen">
-        <div className="w-full h-full p-8">
-          <h1 className="text-3xl font-bold mb-4">Welcome to the Main Body</h1>
-          <p className="mb-4">This is the main content area that occupies the space between the header and footer.</p>
-          <p className="mb-4">Scroll down to see the footer at the bottom of the page.</p>
-        </div>
-      </main>
+    <main className="flex flex-col items-center justify-center h-screen">
+      <p className="text-[2em] text-red-600 mb-4">
+        Please choose an option from the navbar.
+      </p>
+      <p className="text-xl">
+        Games won: {gamesWon}{' '}
+        <button 
+          onClick={handleReset}
+          className="text-blue-600 hover:underline cursor-pointer"
+        >
+          (reset)
+        </button>
+      </p>
+    </main>
   );
 }
 
