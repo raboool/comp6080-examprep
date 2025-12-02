@@ -1,21 +1,12 @@
-import React from 'react';
-import { styled } from '@mui/material/styles';
-
-const useStyles = styled(() => ({
-  footer: {
-    backgroundColor: '#999999',
-    width: '100%',
-    height: '50px',
-    position: 'absolute',
-    bottom: 0,
-  },
-}));
-
 function Footer() {
-  const classes = useStyles();
-
   return (
-    <footer className={classes.footer}></footer>
+      <div>
+        <footer className="w-full h-[50px] bg-[#999999]">
+            <div className="h-full flex items-center justify-center text-white">
+            Footer Content
+            </div>
+        </footer>
+      </div>
   );
 }
 

@@ -6,20 +6,18 @@ import {
   Route,
 } from "react-router-dom";
 
-import BlankoPage from "./pages/BlankoPage";
-import SlidoPage from './pages/SlidoPage';
-import TetroPage from './pages/TetroPage';
 import Dashboard from './pages/Dashboard';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
       <Router>
+        <Header />
         <Routes>
-          <Route path="/blanko" element={<BlankoPage />} />
-          <Route path="/slido" element={<SlidoPage />} />
-          <Route path="/tetro" element={<TetroPage />} />
           <Route path="/" element={<Dashboard />} />
         </Routes>
+        <Footer />
       </Router>
   );
 }
