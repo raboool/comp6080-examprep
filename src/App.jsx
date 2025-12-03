@@ -8,6 +8,7 @@ import {
 
 import Dashboard from './pages/Dashboard';
 import Blanko from './pages/Blanko';
+import Slido from './pages/Slido';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/blanko" element={<Blanko />} />
+            <Route path="/slido" element={<Slido />} />
           </Routes>
           <Footer />
         </div>
