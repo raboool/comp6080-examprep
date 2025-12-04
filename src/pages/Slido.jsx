@@ -99,7 +99,7 @@ const Slido = () => {
       const row = Math.floor(emptyIndex / 3);
       const col = emptyIndex % 3;
 
-      let targetIndex = -1;
+      let targetIndex = -1;c
 
       switch (e.key) {
         case 'ArrowUp':
@@ -169,7 +169,7 @@ const Slido = () => {
                 <div
                   className="w-full h-full bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: `url(https://raw.githubusercontent.com/COMP6080/24T3-assets/main/ass2/shrek_${tile}.jpg)`,
+                    backgroundImage: `url(/shrek/${tile}.png)`,
                     backgroundSize: '100% 100%',
                   }}
                 />
